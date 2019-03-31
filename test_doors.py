@@ -1,5 +1,5 @@
+
 from Doors_Opening import get_doors_open
-import csv
 from urllib.request import urlopen
 
 
@@ -32,6 +32,7 @@ for item in sort_me:
     #makes the input string
     y = new_string[3::]
     y = y.replace(",", "")
+    #set up the input
     LD = y[0]
     RD = y[1]
     CL = y[2]
@@ -41,4 +42,5 @@ for item in sort_me:
     RI = y[6]
     RO = y[7]
     GS = y[8]
+    #calls outside function
     get_doors_open(LD, RD, CL, ML, LI, LO, RI, RO, GS)
